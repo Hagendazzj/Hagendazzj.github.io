@@ -1,48 +1,589 @@
+* {
+    box-sizing:border-box;
+    
+}
+html {
+    font-size: 10px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body{
+
+    overflow-x: hidden;
+}
 header {
-  background: url(../images/heroBackground.png) center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
+    height: 30rem;
+    background:#FCFCFC;
+    position: relative;
+
+}
+.nav-links a{
+	color: #373F51;
+	text-decoration: none;
+    font-size: 3.5rem;
+    letter-spacing: .5rem; 
+    font-weight: 900;
+    align-items: center;
+    justify-content: space-around;
+    display:flex;
+}
+
+.logobottom {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    display:none;
+    z-index: 1;  
+
+}
+
+.logotop{
+    position: absolute;
+    top:3.5rem;
+    left:5rem;
+    display:none;
+    justify-content: space-around;
+
+}
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items:center ;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    
+}
+
+nav{
+    top:0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FCFCFC;
+    width:100%;
+    position: fixed;
+    font-family: "roboto mono",sans-serif;
+    z-index: 2;
+    transition: top 0.3s;
+    
+}
+
+.burger{
+    display:none;
+    cursor: pointer;
+    padding-top: 0px;
+    position: fixed;
+    margin: 3rem;
+    left: 0;
+    top: 0;
+}
+
+.burger div{
+    height: 3px;
+	width: 25px;
+	background-color:#373F51;
+    border-radius: .5rem;
+    margin:5px;
+    transition: all 0.3s ease-in-out;
+    top:0;
+   
+}
+
+.bluephone{
+    position: absolute;
+    width: 70.8rem;
+    left: -30rem;
+    top: 14.6rem;
+    
+}
+
+
+.circletime {
+
+    position:absolute;
+    width: 10rem;
+    right: 2rem;
+    top: 54rem;
+   
+    
+}
+.worksect {
+
+    background:#FCFCFC;
+    box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
+    border-radius: 2%;
+    margin: 5rem;
+    width: 50%;
+    display:flex;
+    align-items: center;
+
+}
+
+.topright {
+    display:flex;
+    position:absolute;
+    width: 15.3rem;
+    right: -7.3rem;
+    top: -16rem;
+    z-index: 99;
+    
+    
 }
 
 h1 {
-  color: hsla(0, 0%, 100%, 0.9);
-  font-weight: bold;
+    color: #874000;
+    font-family: 'lora',serif;
+    font-size:3.6rem;
+    padding-top:11rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0rem;
 }
+
 .slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
+    color: #874000;
+    font-family: 'roboto';
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 167.23%;
+    text-align: center;
 }
 
-main {
-  max-width: 900px;
-}
-.project-description {
-  padding-left: 0;
+h2 {
+    font-family: 'lora',serif;
+    font-size:2.6rem;
+    padding: 1rem;
 }
 
+.description {
+    margin: 2rem;
+    font-family: 'roboto',sans-serif;
+    font-size:1.6rem;
+}
+
+.container{
+    background: #FEF8F7;
+
+}
+
+.projectsfull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .project img {
-  width: 100%;
+    border-radius: 3px 3px 0px 0px;
 }
-footer.mdl-mini-footer {
-  bottom: 0;
-padding: 0.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
+.project1 {
+    width: 100%;
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 1.6rem;
 }
-@media screen and (max-width: 1024px) {
- header.mdl-layout__header {
-   display: flex;
+.project2 {
+     width: 100%;
+}
+ .footlinks a {  
+    color: #373F51;
+	text-decoration: none;
+    letter-spacing: .5rem; 
+    font-weight: bold;
+    padding:2rem;
+    }
+
+.footlinks {
+    margin: 2rem;
+    font-family: "roboto mono",sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    
+    
+}
+footer {
+    background: #FCFCFC;
+    align-items: center;
+    display: flex;
+    font-family: "roboto mono",sans-serif;
+    justify-content: space-around;
+    min-height: 8rem;
+}
+/* large desktop */
+@media only screen and (max-width: 1444px){
+    .worksect {
+
+        background:#FCFCFC;
+        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
+        border-radius: .7rem;
+        width: 60%;
+        display:flex;
+        margin-right:20rem;
+        margin-left:20rem;
+    }
+
+  body{
+      overflow-x: hidden;
   }
+   
+.logobottom{
+
+    display:none;
 }
 
-body {
-  padding-bottom: 5rem;
+.logotop{
+    position: absolute;
+    top:2.5rem;
+    left:4rem;
+    display:none;
+    justify-content: space-around;
+    
+}
+    
+header {
+    height: 60rem;
+    background: #FCFCFC;
+    position: relative;
+}
+
+h1 {
+    color: #874000;
+    font-family: 'lora',serif;
+    font-size:8.6rem;
+    padding-top:25rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0rem;
+}
+
+.slogan {
+    color: #874000;
+    font-family: 'roboto';
+    font-size: 3.6rem;
+    font-weight: lighter;
+    line-height: 167.23%;
+    text-align: center;
+}
+nav{
+    top:0;
+    display:flex;
+	align-items: center;
+    justify-content: space-around;
+    font-family: "roboto mono",sans-serif;
+    min-height: 6vh;
+
+
+   
+}
+    .nav-links{
+    display:flex;
+    width:70%;
+    justify-content: space-around;
+    list-style: none;
+    margin:3.5rem;
+    }
+
+.nav-links a{
+	color: #373F51;
+	text-decoration: none;
+    font-size: 3.5rem;
+    letter-spacing: .5rem; 
+    font-weight: 900;
+}
+    
+    .nav li{
+        width:60%;
+    }
+    
+
+    .burger{
+        display:none;
+    }
+}
+/* small desktop */
+@media screen and (max-width: 1024px){
+
+    .worksect {
+
+        background:#FCFCFC;
+        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
+        border-radius: .7rem;
+        width: 60%;
+        display:flex;
+        margin-right:20rem;
+        margin-left:20rem;
+
+    
+    }
+
+   body{
+       overflow-x: hidden;
+   }
+    
+.footlinks a {  
+        color: #373F51;
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: .5rem; 
+        font-weight: bold;
+        }
+    
+.footlinks {
+        margin: 0rem;
+        width:70%;
+        font-family: "roboto mono",sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        
+        
+    }
+footer {
+        background: #FCFCFC;
+        align-items: center;
+        display: flex;
+        font-family: "roboto mono",sans-serif;
+        justify-content: space-around;
+        min-height: 8rem;
+}
+
+h1 {
+    color: #874000;
+    font-family: 'lora',serif;
+    font-size:3.3rem;
+    padding-top:11rem;
+    justify-content: center;
+    text-align: center;
+    margin:0rem;
+}
+
+.slogan {
+    color: #874000;
+    font-family: 'roboto';
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 167.23%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'lora',serif;
+    font-size:2.6rem;
+    padding: 1rem;
+}
+
+.description {
+    margin: 2rem;
+    font-family: 'roboto',sans-serif;
+    font-size:1.6rem;
+}
+
+.logotop{
+    position: absolute;
+    width:2.8rem;
+    top:1.5rem;
+    left:4rem;
+    display:none;
+    justify-content: space-around;
+    
+
+
+}
+    nav{
+    top:0;
+	align-items: center;
+    justify-content: space-around;
+    display: flex;
+    font-family: "roboto mono",sans-serif;
+    min-height: 6vh;
+   
+}
+    .nav-links{
+    display:flex;
+    width:80%;
+    justify-content: space-around;
+    list-style: none;
+    z-index: 1;
+    right: 0rem;
+    margin:2rem;
+    }
+    
+    .nav-links a{
+	color: #373F51;
+	text-decoration: none;
+    font-size: 3.5rem;
+    letter-spacing: .5rem; 
+    font-weight: bold;
+}
+    
+    .nav li{
+        width:60%;
+    }
+    
+
+    .burger{
+        display:none;
+    }
+}
+
+/* mobile version */
+@media screen and (max-width: 768px) {
+    
+    .worksect {
+
+        background:#FCFCFC;
+        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
+        border-radius: .7rem;
+        width: 60%;
+        display:grid;
+        margin-right:7rem;
+        margin-left:7rem;
+
+    
+    }
+    
+    
+    .logotop{
+        display:none;
+    }
+    
+    
+    .logobottom {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;  
+    
+    }
+    
+    body{ 
+        overflow-x: hidden;  
+    }
+
+    h1 {
+        color: #874000;
+        font-family: 'lora',serif;
+        font-size:3.6rem;
+        padding-top:11rem;
+        justify-content: center;
+        text-align: center;
+        margin: 0rem;
+}
+
+    .slogan {
+        color: #874000;
+        font-family: 'roboto';
+        font-size: 1.6rem;
+        font-weight: lighter;
+        line-height: 167.23%;
+        text-align: center;
+}
+
+    h2 {
+        font-family: 'lora',serif;
+        font-size:2.6rem;
+        padding: 1rem;
+}
+
+    .description {
+        margin: 2rem;
+        font-family: 'roboto',sans-serif;
+        font-size:1.6rem;
+}
+  
+    footer{
+        background: #FCFCFC;
+        display: flex;
+        font-family: "roboto mono",sans-serif;
+        justify-content: space-around;
+        min-height: 9rem;
+   
+}
+     
+   .footlinks {
+       display:inline-block;
+        column-count: 2;
+        width:75%;
+        justify-content: space-around;
+        list-style: none;
+    
+}
+    .footlinks a {  
+        margin: 2rem;
+        color: #373F51;
+	    text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: .5rem; 
+        font-weight: bold;
+        padding:.5rem;
+    
+  
+    
+    }
+    
+    .nav-links a{
+        color: white;
+        text-decoration: none;
+        font-family: "roboto",sans-serif;
+        font-size: 2.5rem;
+        left: 0;
+        margin: 2rem;
+    }
+   
+    .nav-links{
+        position: fixed;
+        height:80vh;
+        top:10vh;
+        background-color: #373F51;
+        list-style: none;
+        padding: 6rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:30rem;
+        border-radius: 0 10px 10px 0;
+        transform: translateX(-105%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        left: -4rem;
+    }
+
+    nav{
+        min-height: 8rem;
+    }
+
+    .nav-links li{
+        opacity:0%;
+    }   
+    
+    .burger {
+        display:block;
+        z-index: 1;
+    }
+    
+    .nav-active{
+    transform: translateX(0%);
+    left: -5rem;
+}
+    
+    @keyframes navLinkFade{
+        from{
+            opacity:0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: translateY(10.3px) translateX(2px) rotate(45deg);
+    }
+    .toggle .line2 {
+        opacity:0;
+    }
+    .toggle .line3 {
+        transform: translateY(-6px) translateX(2px) rotate(-45deg);
+    }
 }
