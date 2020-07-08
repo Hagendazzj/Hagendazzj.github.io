@@ -3,99 +3,80 @@
 <head>
   <title>Portfolio | James Hagen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
-
-<!-- Material Design Lite -->
- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-amber.min.css" />
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    
-<!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">   
-   
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/reset.css">      
 <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-     <h1>James Hagen</h1>
-     <p class="slogan">UX Designer from Colorado</p>
-    </header>
-
-    <main class="mdl-layout__content mdl-grid">
-
-          <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-         <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-          </div>
-          <div class="mdl-cell mdl-cell--7-col">
-            <h2 class="mdl-card__title-text">Featured Project Name</h2>
-             <p class="project-description mdl-card__supporting-text">Project description text</p>
-          </div>
-         </div>
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-          <div>
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Project Name</h2>
-          </div>
-          <div class="mdl-card__supporting-text">Project description text</div>
+    <main class="container">
+        <div class="top">
+ <nav id=nav>
+            <img class="logotop" src="Images/logo.svg">
+   
+			<ul class="nav-links">
+				<li>
+                    <a href=index.html>Work</a></li>
+				<li>
+                    <a href=about.html>About</a></li>
+				<li>
+                    <a target="_blank" href="James%20Hagen%20%20resume.pdf">Resume</a> 
+				</li>
+			</ul>
+                <div class="burger">
+				    <div class="line1"></div>
+				    <div class="line2"></div>
+				    <div class="line3"></div>
+			</div>
+    </nav>
         </div>
-  
-        <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-          <div>
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Project Name</h2>
-          </div>
-         <div class="mdl-card__supporting-text">Project description text</div>
-        </div>
-         
-        <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-          <div>
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Project Name</h2>
-          </div>
-          <div class="mdl-card__supporting-text">Project description text</div>
-        </div>
-
-    </main>
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-         <li><a href="{Your LinkedIn URL}"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-         <li><a href="{Your GitHub Profile URL}">GitHub</a></li>
-         <li><a href="{Your Facebook Profile URL}">Facebook</a></li>
-         <li><a href="{Your Twitter URL}">Twitter</a></li>
-         <li><a href="mailto:{Your email address}">Email</a><li>
-          <a href="{Your LinkedIn URL}">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-         <a href="{Your GitHub Profile URL}">
-           <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{Your Facebook Profile URL}">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{Your Twitter URL}">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:{Your email address}">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-       </ul>
-    </footer>
-    </body>
+        <header>
+     <h1>Hi, I'm James</h1>
+     <p class="slogan">A UX Designer from Colorado.</p>
+        <img class="bluephone" src="Images/bluephone.svg"
+             alt="Phone illustration"/>
+        <img class=topright src="Images/topright.svg"
+             alt="color illustrations"/>
+        <div class=circlecontainer>
+        <img class="circletime rellax" data-rellax-speed="3" src="Images/redcircle.svg"
+        alt="color illustrations"/>
+            </div>
+            </header>
+        <section class=projectsfull>  
+        <ul class="worksect">
+         <li>
+            <img class="project1" src="Images/project1.svg" alt="project 1 screenshot"/>
+          </li>
+          <li>
+            <h2>Featured Project Name</h2>
+             <p class="description">Project description text</p>
+          </li>
+         </ul>
+      <ul class="worksect">
+          <li>
+            <img class="project2" src="Images/project2.svg" alt="project 2 screenshot"/>
+          </li>
+          <li>
+            <h2>Project Name</h2>
+          </li>
+          <li class="description">Project description text</li>
+        </ul>
+        </section>
+        </main>
+    <footer>
+      <img class="logobottom" src="Images/logo.svg">
+      <ul class="footlinks">
+          <li><a href="mailto:hagenjh@gmail.com">Email</a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/hagenjh"><i >linkedin</i></a></li>
+          <li><a href="http://github.com/Hagendazzj">GitHub</a></li>
+          <li><a href="https://dribbble.com/hagenjh">Dribbble</a></li>
+           </ul>
+         </footer>
+        <script src="js/rellax.min.js"></script>
+        <script src="js/script.js"></script>
+        
+    </body> 
 </html>
