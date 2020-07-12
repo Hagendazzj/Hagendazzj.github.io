@@ -6,8 +6,112 @@ html {
     font-size: 10px;
     position: relative;
     overflow-x: hidden;
+
+}
+.topsection{
+    height: 30vh;
+    width: 100%;
+}
+.whitesection{
+    height:80vh;
+    background:pink;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgs{
+
+    width:20%;
+    height: auto;
+    margin:2rem;
+   align-items: center;
+   justify-content: center;
+   margin-right: 20rem;
+    
+
 }
 
+.bullets{
+    margin-bottom: 5rem;
+}
+
+.bullets li {
+    margin:2rem;
+}
+
+.titletop{
+    margin-bottom:5rem;
+}
+.titletoporange{
+    margin-bottom:5rem;
+    color: #FCFCFC;
+}
+.orangetext {
+    color: #FCFCFC;
+}
+
+h3{
+    font-size: 4.8rem;
+}
+
+.orangesection{
+    height:110vh;
+    background:orange;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{ 
+    max-height: 70%;
+    margin-bottom: 20rem;
+    
+}
+.buttonprojects:hover {
+    background: #555B6B;
+}
+
+.project1header{
+    max-width: 100%;
+    height: auto;
+}
+
+.buttonprojects {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right:auto;
+    height: 5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    color: #FCFCFC;
+    background-color: #373F51;
+    border: none;
+}
+.button:hover{
+    background: #555B6B;
+}
+.button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    margin-left: auto;
+    margin-right:auto;
+    height: 5rem;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    color: #FCFCFC;
+    background-color: #373F51;
+    border: none;
+}
 body{
 
     overflow-x: hidden;
@@ -64,7 +168,7 @@ nav{
     width:100%;
     position: fixed;
     font-family: "roboto mono",sans-serif;
-    z-index: 2;
+    z-index: 95;
     transition: top 0.3s;
     
 }
@@ -92,31 +196,80 @@ nav{
 
 .bluephone{
     position: absolute;
-    width: 70.8rem;
-    left: -30rem;
+    width: 55.8rem;
+    left: -40rem;
     top: 14.6rem;
+    z-index: 94;
     
 }
 
-
+.bluephone2{
+    position: absolute;
+    width: 50rem;
+    left: -42rem;
+    top: 14.9rem;
+    z-index:94 ;
+    
+}
+.chartcontainer{
+    display:flex;
+}
+canvas{
+    z-index: 100;
+}
 .circletime {
 
     position:absolute;
     width: 10rem;
-    right: 2rem;
+    right: 2.3rem;
     top: 54rem;
+   z-index: 96;
+    
+}
+
+.circletimeouter {
+
+    position:absolute;
+    width: 18rem;
+    right: -1.7rem;
+    top: 50rem;
+    z-index: 96;
    
+    
+}
+
+.circletimeouter2 {
+
+    position:absolute;
+    width: 18rem;
+    right: -1.7rem;
+    top: 58rem;
+    z-index: 96;
+   
+    
+}
+
+.circletimeouter3 {
+
+    position:absolute;
+    width: 18rem;
+    right: -1.7rem;
+    top: 42rem;
+    z-index: 96;
     
 }
 .worksect {
 
     background:#FCFCFC;
-    box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
-    border-radius: 2%;
+    box-shadow:  21px 21px 42px #d6d6d6, 
+             -21px -21px 42px #ffffff;
+    border-radius: 1.5%;
     margin: 5rem;
     width: 50%;
     display:flex;
     align-items: center;
+    cursor: pointer;
+
 
 }
 
@@ -131,10 +284,21 @@ nav{
     
 }
 
+.topright2 {
+    display:flex;
+    position:absolute;
+    width: 15.3rem;
+    right: -2.3rem;
+    top: -16rem;
+    z-index: 98;
+    
+    
+}
+
 h1 {
     color: #874000;
     font-family: 'lora',serif;
-    font-size:3.6rem;
+    font-size:3.5rem;
     padding-top:11rem;
     justify-content: center;
     text-align: center;
@@ -167,21 +331,28 @@ h2 {
 
 }
 
+.container2{
+    background: #FCFCFC;
+}
+
 .projectsfull{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5rem;
+
 
 }
-.project img {
-    border-radius: 3px 3px 0px 0px;
-}
+
 .project1 {
-    width: 100%;
-
+    display: block;
+    width:72rem;
+    border-radius: 7px 0px 0px 7px;
 }
 .project2 {
-     width: 100%;
+    display: block;
+    width:72rem;
+    border-radius: 7px 0px 0px 7px;
 }
  .footlinks a {  
     color: #373F51;
@@ -209,13 +380,26 @@ footer {
     font-family: "roboto mono",sans-serif;
     justify-content: space-around;
     min-height: 8rem;
+    box-shadow:  -26px -26px 52px #efefef, 
+             26px 26px 52px #ffffff;
 }
 /* large desktop */
 @media only screen and (max-width: 1444px){
+   
+    .project1 {
+        display: block;
+        width:45rem;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .project2 {
+        display: block;
+        width:45rem;
+        border-radius: 7px 0px 0px 7px;
+    }
+   
     .worksect {
 
         background:#FCFCFC;
-        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
         border-radius: .7rem;
         width: 60%;
         display:flex;
@@ -268,7 +452,7 @@ h1 {
 nav{
     top:0;
     display:flex;
-	align-items: center;
+	align-items: flex-start;
     justify-content: space-around;
     font-family: "roboto mono",sans-serif;
     min-height: 6vh;
@@ -304,10 +488,19 @@ nav{
 /* small desktop */
 @media screen and (max-width: 1024px){
 
+    .project1 {
+        display: block;
+        width:37rem;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .project2 {
+        display: block;
+        width:37rem;
+        border-radius: 7px 0px 0px 7px;}
+
     .worksect {
 
         background:#FCFCFC;
-        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
         border-radius: .7rem;
         width: 60%;
         display:flex;
@@ -429,10 +622,63 @@ h2 {
 /* mobile version */
 @media screen and (max-width: 768px) {
     
+
+    .project img {
+        border-radius: 3px 3px 0px 0px;
+        width:100%;
+    }
+
+    .project1{
+        width: 100%;
+        border-radius: 3px 3px 0px 0px;
+    }
+
+    .project2{
+        width: 100%;
+        border-radius: 3px 3px 0px 0px;
+    }
+    .circletime {
+
+        position:absolute;
+        width: 6rem;
+        right: -3rem;
+        top: 54rem;
+       
+        
+    }
+
+    .circletimeouter {
+
+        position:absolute;
+        width: 10rem;
+        right: -4.7rem;
+        top: 51.7rem;
+       
+        
+    }
+    
+    .circletimeouter2 {
+    
+        position:absolute;
+        width: 10rem;
+        right: -4.7rem;
+        top: 56rem;
+       
+        
+    }
+    
+    .circletimeouter3 {
+    
+        position:absolute;
+        width: 10rem;
+        right: -4.7rem;
+        top: 47rem;
+        
+        
+    }
     .worksect {
 
         background:#FCFCFC;
-        box-shadow: 0px 4px 6px rgba(55, 63, 81, 0.3);
         border-radius: .7rem;
         width: 60%;
         display:grid;
