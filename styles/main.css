@@ -9,11 +9,44 @@ html {
 
 }
 
+.imgus{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+
+}
+.whitesection3 {
+    height: 100vh;
+    background: #Fcfcfc;}
+.middletext{
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    margin-left: auto;
+    padding: 30px;
+    color: #FCFCFC;
+    font-family: "roboto",sans-serif;
+}
+
+.middletextwhitesection{
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    margin-left: auto;
+    padding: 30px;
+    color: black;
+    font-family: "roboto",sans-serif;
+}
+
 .personas{
     font-size: 2rem;
     width: 49.5%;
-    margin-left: 4%;
+    align-content: center;
+    justify-content: center;
     float: left;
+    margin-left: auto;
     padding:10px;
     color: #FCFCFC;
     font-family: "roboto",sans-serif;
@@ -133,7 +166,10 @@ canvas{
 }
 .titletoporange{
     margin-bottom:5rem;
+    padding-top:5rem;
     color: #FCFCFC;
+    font-family:"lora", serif;
+    justify-content: center;
 }
 .orangetext {
     color: #FCFCFC;
@@ -141,6 +177,10 @@ canvas{
 
 h3{
     font-size: 4.8rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 .imgp{
@@ -148,11 +188,15 @@ h3{
 }
 
 .orangesection2{
+    height:60vh;
+    background:#F7996A;
+    
+    
+}
+
+.orangesection3{
     height:100vh;
     background:#F7996A;
-    display:flex;
-
-    flex-direction: column;
 }
 
 .orangesection{
@@ -414,6 +458,10 @@ h2 {
     font-family: 'lora',serif;
     font-size:2.6rem;
     padding: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .description {
@@ -826,13 +874,33 @@ h2 {
 
     h2 {
         font-family: 'lora',serif;
-        font-size:2.6rem;
+        font-size:2.2rem;
         padding: 1rem;
+        display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
+.buttonprojects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    color: #FCFCFC;
+    background-color: #373F51;
+    border: none;
+    margin-bottom:2rem;
+}
     .description {
         margin: 2rem;
-        font-family: 'roboto',sans-serif;
+        font-family:"roboto",sans-serif;
         font-size:1.6rem;
 }
   
