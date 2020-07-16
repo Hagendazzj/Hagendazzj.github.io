@@ -8,17 +8,101 @@ html {
     overflow-x: hidden;
 
 }
+
+.personas{
+    font-size: 2rem;
+    width: 49.5%;
+    margin-left: 4%;
+    float: left;
+    padding:10px;
+    color: #FCFCFC;
+    font-family: "roboto",sans-serif;
+
+
+}
+.ptitle{
+    font-weight: bold;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+.personas:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.bulletsca{
+    margin-bottom: 2em;
+}
+
+.bulletsca li{
+    margin:2rem;
+}
+.threepage{
+    font-size: 2rem;
+    float: left;
+    width: 33.3%;
+    padding:1px;
+    position: relative;
+    align-items:center;
+    justify-content: space-around;
+    font-family: "roboto",sans-serif;
+}
+.threepage:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+canvas{
+    margin-bottom:3rem;
+}
+.charttitle{
+    font-size: 2.2rem;
+    font-family: "roboto",sans-serif;
+    color: #FCFCFC;
+    margin-top: 8rem;
+    margin-bottom: 1em;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    float: left;
+    width: 33.3%;
+    margin:0rem;
+    padding:12px;
+    align-items: center;
+    
+
+}
+@media screen and (max-width: 600px) {
+    .chartfull li {
+      width: 100%;
+
+    }
+
+    .threepage{
+        width: 100%;
+    }
+  }
+
 .topsection{
     height: 30vh;
     width: 100%;
 }
 .whitesection{
     height:80vh;
-    background:pink;
+    background:#fcfcfc;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.whitesection2{
+    height:60vh;
+    background:#fcfcfc;
+
 }
 .imgs{
 
@@ -42,6 +126,10 @@ html {
 
 .titletop{
     margin-bottom:5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .titletoporange{
     margin-bottom:5rem;
@@ -55,9 +143,21 @@ h3{
     font-size: 4.8rem;
 }
 
+.imgp{
+    width: 90%;
+}
+
+.orangesection2{
+    height:100vh;
+    background:#F7996A;
+    display:flex;
+
+    flex-direction: column;
+}
+
 .orangesection{
-    height:110vh;
-    background:orange;
+    height:100vh;
+    background:#F7996A;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +303,7 @@ nav{
     
 }
 
+
 .bluephone2{
     position: absolute;
     width: 50rem;
@@ -211,12 +312,7 @@ nav{
     z-index:94 ;
     
 }
-.chartcontainer{
-    display:flex;
-}
-canvas{
-    z-index: 100;
-}
+
 .circletime {
 
     position:absolute;
@@ -622,6 +718,9 @@ h2 {
 /* mobile version */
 @media screen and (max-width: 768px) {
     
+    .chartfull{
+        column-count: 1;
+    }
 
     .project img {
         border-radius: 3px 3px 0px 0px;
@@ -793,6 +892,8 @@ h2 {
         z-index: 1;
         left: -4rem;
     }
+
+
 
     nav{
         min-height: 8rem;
