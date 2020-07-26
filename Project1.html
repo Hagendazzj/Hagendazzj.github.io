@@ -33,10 +33,10 @@
     </nav>
         </div>
         <header>
-            <img class="project1header" src="Images/project1header.jpg" alt="project 1 screenshot"/>
+            <div class="project1header" alt="project 1 screenshot"></div>
         </header>
             <section class="whitesection">
-                <h2 class=titletop>Cloud Storage App</h2>
+                <h2 class=titletopmain>Cloud Storage App</h2>
                 <h3 class=titletop>Overview</h3>
                     <ul class="bullets">
                         <li>Create a unique cloud storage app that could thrive in the current market.</li>
@@ -45,16 +45,20 @@
                         <li><b>Tools</b>: Figma, Usability Hub, Google Forms, Google Draw, Invision</li>
                         <li><b>Deliverables</b>: Hifi Prototype (desktop and app), Marketing website mockup (desktop and mobile) and branding with style guide.</li>
                     </ul>
+                    <a target="_blank" href="https://jameshagen992281.invisionapp.com/overview/Dotlets-App-ck9isa1o0462n018ac7wnotln/screens">
+                     <button class=button1>View protoype</button> 
+                    </a>
                 <h3 class="titletop">Problem</h3>
-                <p>How to stand out in the cloud storage market and deliver an experience that is unique and truly helpful. </p>
+                <p class="bullets">Standing out in the cloud storage market and delivering an experience that is unique and truly helpful. </p>
                 
             </section>
             <section class="orangesection">
                 <h3 class="titletoporange">Solution</h3>
-                <p class="orangetext bullets">A gamified approach to organizing. The survey results showed that most did not feel they had their storage organized. They didn't need more features that made it more complicated they needed to simply organize their content and know when something is updated.
-                <img class=imgs src="images/Organize Screen.jpg">   
-                <img class=imgs src="images/Dashboard.jpg">  
-                </p>
+                <div class="textwrappercenter">
+                <p class="orangetextbullets">A gamified approach to organizing. The survey results showed that most did not feel they had their storage organized. They didn't need more features that made it more complicated they needed to simply organize their content and know when something is updated.</p>
+            </div>
+                <img class=imgs src="images/Organize Screen.svg">   
+                <img class=imgs src="images/Dashboard.svg"> 
                 <h3 class="titletoporange">User Surveys</h3>
                 <ul class=chartfull>
                     <li class=charttitle>Are there benefits to using storage apps?     
@@ -63,7 +67,7 @@
                 </li>
 
                 <li class=charttitle>If you kept all your digital info in one spot what would be most important?      
-
+                    
                 <canvas class="myChart" id="myChart2" width="250" height="310"></canvas>
             </li>
                 <li class=charttitle>What is the primary reason you use these kinds of apps?    
@@ -75,7 +79,7 @@
             <section class="whitesection2">
                 <h3 class=titletop>Competitive analysis</h3>
                 <div class="threepage">
-                    <img src="Images/Evernote.svg">
+                    <img class="threeimg"src="Images/Evernote.svg">
                         <ul class="bulletsca">
                             <li><b>Strengths</b>: Notebook organization differentiates them in the market.</li>
                             <li><b>Weakness</b>: Notebooks might not work for every project. </li>
@@ -84,7 +88,7 @@
                         </ul>
                 </div>
                 <div class="threepage">
-                    <img src="Images/Drive.svg">
+                    <img class="threeimg" src="Images/Drive.svg">
                         <ul class="bulletsca">
                             <li><b>Strengths</b>: Google has phones and computers to promote the ecosystem. 
                                 The navigation menu is very easy to access and creates a user-friendly interface. </li>
@@ -94,7 +98,7 @@
                         </ul>
                 </div>
                 <div class="threepage">
-                    <img src="Images/Dropbox.svg">
+                    <img class="threeimg" src="Images/Dropbox.svg">
                         <ul class="bulletsca">
                             <li><b>Strengths</b>: Google has phones and computers to promote the ecosystem. 
                                 The navigation menu is very easy to access and creates a user-friendly interface. </li>
@@ -106,6 +110,7 @@
             </section>
             <section class="orangesection2">
                 <h3 class="titletoporange">Personas</h3>
+                <div class=personasfull>
                 <div class="personas">
                 <img class="imgp" src="images/persona1.jpg">   
                 <p class="ptitle">Mike Gonzalez 31, software developer</p>
@@ -126,6 +131,7 @@
                        <li> -Storage and org apps don't work with what she uses</li>
                     </ul>     
                 </div> 
+                </div>
         </section>
         <section class="orangesection3">
             <div class=middle>
@@ -140,7 +146,7 @@
                 <img class="imgus" src="images/userflows.svg"> 
                 </div>
         </section>
-        <section class="whitesection3">
+        <section class="whitesection4">
             <div class=middle>
                 <h3 class="titletop">Wireframing</h3>
                 <p class="middletextwhitesection">After wireframing and getting protoype set up for the 1 I then realized it didn’t make organizing any easier and went back and started over and came up with 2 </p>
@@ -148,46 +154,47 @@
                 <img class=imgs src="images/wireframe2.svg"> 
                 </div>
         </section>
-        <section class="whitesection3">
+        <section class="whitesection5">
             <div class=middle>
                 <h3 class="titletop">Usability testing</h3>
-                <ul class="bulletsca">
+                <ul class="middletextwhitesection" class="bulletsca">
                     <li><b>Tested</b>:</li>
                     <li>- Signing up for an account </li>
                     <li>- Adding a piece of content</li>
                     <li>- Organizing a piece of content   </li>
                 </ul>
-                <ul class="bulletsca">
-                    <li><b>Changes</b>:</li>
-                    <li>- Storage bar  moved and days dotting moved up encourage organization and solve main problem. </li>
+                <div class="middletextwhitesection" class="bulletsca">
+                    <p><b>Changes</b>:</p>
+                    <p>- Storage bar  moved and days dotting moved up encourage organization and solve main problem. </p>
+                    <p>- Selecting multiple pieces of content wasn't a clear process</p>
+                </div>  
                     <img class=imgs src="images/Utesting1.svg">
-                    <li>- Selecting multiple pieces of content wasn't a clear process</li>
                     <img class=imgs src="images/Utesting2.svg"> 
-                </ul>   
+                 
                 </div>
         </section>
-        <section class="orangesection3">
-            <div class=middle>
+        <section class="orangesection4">
+            <div class="middle">
                 <h3 class="titletoporange">Branding</h3>
                 <p class="middletext">Dotlets is a simple, elegant and encouraging brand and the colors chosen here show a earthy and grounded feel. The pinkish color (F7996A) is more of a playful color than the rest of the others and gives a dash of elegance as well. I chose the Krub font beacuse of the nice pairing with the Katibeh the easy to read krub is also funtional with many weights to create a sense of order and simplicity with mainly using one font. The whole brand is minimalist to the core. </p>
-                <img class=imgs src="images/branding1.svg">   
-                <img class=imgs src="images/branding2.svg">
+                <img class="imgs" src="images/branding1.svg">   
+                <img class="imgs" src="images/branding2.svg">
                 </div>
         </section>
-        <section class="orangesection3">
-            <div class=middle>
+        <section class="orangesection5">
+            <div class="middle">
                 <h3 class="titletoporange">Hifi mockups</h3>
                 <p class="middletext">After some feedback I was able to make the marketing website simplier and more cohesive. </p>
-                <img class=imgs src="images/site1.svg">   
-                <img class=imgs src="images/site2.svg">
+                <img class="imgs" src="images/site1.svg">   
+                <img class="imgs" src="images/site2.svg">
                 <p class="middletext">Adding shadows so it is easier to view daily goals after first round of feedback. Making the days dotting section. easier to see and understand by adding days 
                     I changed the colors to match from the final style guide.  </p>
-                <img class=imgs src="images/dash1.svg">   
-                <img class=imgs src="images/dash2.svg">    
+                <img class="imgs" src="images/dash1.svg">   
+                <img class="imgs" src="images/dash2.svg">    
             </div>
         </section>
-        <section class="whitesection3">
-            <div class=middle>
+        <section class="whitesection6">
+            <div class="middle">
                 <h3 class="titletop">Preference testing</h3>
                 <p class="middletextwhitesection">Doing some simple testing with usability hub I was able to make some quick decisions about the app navigation and the CTA button on the marketing site.  </p>
                 <img class=imgs src="images/pref1.svg"> 
@@ -198,10 +205,10 @@
                 <img class=imgs src="images/pref2.svg">     
             </div>
         </section>
-        <section class="whitesection3">
-            <div class=middle>
+        <section class="whitesection7">
+            <div class="middle">
                 <h3 class="titletop">Conclusion</h3>
-                <p class="middletextwhitesection">What worked? - The dropping and dragging action, The branding 
+                <p class="middletextwhitesection"><b>What worked?</b> - The dropping and dragging action, The branding 
                     What didn't? - the first draft of wireframes and general direction. 
                     What were your doubts going into the project? Can I actually make a unique product? 
                     What surprised you the most? - how srtating over was a good idea. 
@@ -209,8 +216,8 @@
                     What did you learn while doing this project? - It’s important to listen to the data and care about making a differrnce for people. 
                     How will you use that information in the future? I can take the concept and feeling to any project and match it up against the data. 
                     </p>
-        <section>  
-        <button class=button>Get In Touch</button>
+        <section >  
+        <button class="button">Get In Touch</button>
     </section>
         </main>
     <footer>
