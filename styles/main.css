@@ -13,6 +13,11 @@
   
 }
 
+.projecttext
+{
+    text-decoration: none;
+}
+
 a{
     text-decoration: none;
     
@@ -379,6 +384,7 @@ body{
     height:35rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 .descriptionabout {
