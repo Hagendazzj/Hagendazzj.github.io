@@ -381,6 +381,7 @@ h3{
     background: #555B6B;
 }
 .button {
+    margin-top: 4rem;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -873,7 +874,7 @@ nav{
 	align-items: flex-start;
     justify-content: space-around;
     font-family: "roboto mono",sans-serif;
-    min-height: 6vh;
+    min-height: 4vh;
 
 
    
