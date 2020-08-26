@@ -12,15 +12,32 @@
     
   
 }
+.downloadlinks{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    
+    
+}
+.downloadlinktext{
+    color:white;
+    text-decoration: underline;
+}
+
+.downloadlinktextwhite{
+    color:black;
+    text-decoration: underline;
+}
 
 .projecttext
 {
     text-decoration: none;
+    color: #373F51;
 }
 
 a{
     text-decoration: none;
-    color: #373F51;
     font-size: 1.8rem;
     font-family: "roboto",sans-serif;
 
