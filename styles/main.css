@@ -379,7 +379,7 @@ h3{
     background: #555B6B;
 }
 .button {
-    margin-top: 4rem;
+    margin-top: 11rem;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -1711,7 +1711,7 @@ h2 {
         height:333rem;
     }
     .whitesection2{
-        height: 231rem;
+        height: 211rem;
     }
     .orangesection2{
         height:116rem;
