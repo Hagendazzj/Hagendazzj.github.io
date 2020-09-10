@@ -644,6 +644,14 @@ nav{
     text-align: center;
     margin: 0rem;
 }
+.sloganbox{
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .slogan {
     color: #874000;
@@ -1311,6 +1319,11 @@ h2 {
 
 /* mobile version */
 @media screen and (max-width: 480px) {
+    
+    .sloganbox{
+        max-width: 90%;
+    }
+    
     .projectsfull2{
         height:28rem;
     }
